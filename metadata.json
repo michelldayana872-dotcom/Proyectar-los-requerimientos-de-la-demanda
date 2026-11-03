@@ -1,0 +1,8 @@
+{
+  "name": "Sistema Inteligente de Análisis de la Demanda",
+  "description": "Herramienta avanzada para transformar resultados de encuestas de Google Forms en tabulaciones estadísticas, análisis de demanda, gráficos, proyecciones e informes académicos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

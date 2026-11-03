@@ -1,0 +1,195 @@
+# MANUAL DE USUARIO Y GUÍA PEDAGÓGICA
+## SISTEMA INTELIGENTE DE ANÁLISIS DE LA DEMANDA
+### Transformación de Encuestas de Google Forms en Indicadores Estadísticos, Modelos de Demanda y Proyecciones
+
+---
+
+## 1. INTRODUCCIÓN Y PROPÓSITO DEL SISTEMA
+
+El **Sistema Inteligente de Análisis de la Demanda** es una plataforma tecnológica diseñada para procesar, tabular, visualizar y proyectar datos cuantitativos y cualitativos obtenidos a partir de instrumentos de recolección en línea (especialmente **Google Forms** y hojas de cálculo de **Google Sheets** o **Microsoft Excel**).
+
+El sistema resuelve la brecha entre la captura de respuestas brutas en una encuesta y la formulación rigurosa de un **Estudio de Mercado y Demanda**, proporcionando:
+1. Tabulación matemática con frecuencias absolutas (fi), relativas (hi) y porcentajes acumulados (%acum).
+2. Clasificación temática inteligente de respuestas abiertas (minería de texto y análisis de postura).
+3. Visualización estadística adaptativa (diagramas de barras, gráficos circulares y embudos de conversión).
+4. Modelación de proyecciones econométricas basadas en la taxonomía formal de pronósticos (Métodos Cualitativos, Series de Tiempo y Modelos Causales).
+5. Asistencia analítica con Inteligencia Artificial generativa para la interpretación técnica de hallazgos.
+6. Generación automatizada de informes finales con estructura académica listos para exportar a PDF, Markdown o Excel.
+
+---
+
+## 2. ARQUITECTURA DE MÓDULOS DE LA APLICACIÓN
+
+La interfaz del sistema está organizada en 7 módulos accesibles desde la barra superior de navegación:
+
+1. **Inicio (Dashboard Ejecutivo):** Panel con los principales KPIs (Muestra N, Tasa de Adopción, Uso Diario, Grado de Necesidad, Fricción Ética y el Net Demand Score o NDS).
+2. **Cargar datos:** Zona de importación para arrastrar archivos .csv o .xlsx, previsualización de respuestas crudas y botón para restaurar la encuesta real adjunta de 27 participantes.
+3. **Tabulación:** Tablas estadísticas formales para cada pregunta con sumatorias de verificación y análisis temático de preguntas abiertas.
+4. **Gráficos:** Galería de gráficos dinámicos con selector interactivo de tipo de visualización (barras verticales, barras horizontales, diagramas circulares/donas).
+5. **Análisis de demanda:** Segmentación de clientes (Heavy Users, Casual Adopters, Resistentes), matriz de valor, elasticidad de sustitución y matriz FODA.
+6. **Proyecciones:** Simulador interactivo TAM / SAM / SOM y evaluación de los 10 métodos de pronóstico (con el veredicto científico del método más acertado).
+7. **Informe final:** Reporte monográfico completo estructurado en formato académico con opción de impresión directa a PDF, copia en Markdown y descarga en Excel.
+
+---
+
+## 3. GUÍA DE USO PARA EL ROL DE INSTRUCTOR
+
+### Perfil del Rol
+El **Instructor** es el facilitador técnico y metodológico. Su objetivo es orientar a los aprendices en el rigor estadístico, supervisar la calidad de los datos recopilados, validar las interpretaciones econométricas y evaluar el cumplimiento de competencias de investigación de mercados.
+
+### Objetivos Pedagógicos a Desarrollar:
+- Guiar en el diseño y exportación correcta de instrumentos en Google Forms.
+- Enseñar la formulación matemática de tablas de distribución de frecuencias y acumuladas.
+- Desarrollar el pensamiento crítico en la diferenciación entre "preferencia declarada" y "demanda real efectiva".
+- Explicar la taxonomía de métodos de pronóstico y justificar por qué la Regresión Múltiple y el Método de Holt son superiores a los promedios simples en tecnologías emergentes.
+
+### Flujo de Trabajo Paso a Paso para el Instructor:
+
+#### Paso 1: Configuración y Validación de la Muestra
+1. Ingrese al módulo «Cargar datos».
+2. Puede utilizar la muestra base precargada de 27 entrevistas o solicitar a los aprendices que carguen el archivo .csv descargado desde su propio Google Forms (Respuestas > Descargar respuestas (.csv)).
+3. Verifique en la tarjeta de Estado de la Muestra que el número de registros válidos y columnas coincida con el instrumento aplicado.
+
+#### Paso 2: Revisión Metodológica de Tabulaciones
+1. Diríjase al módulo «Tabulación».
+2. Evalúe con los aprendices la consistencia de las sumatorias:
+   - Suma fi = N (Total de la muestra).
+   - Suma hi = 1.0000 (Suma de frecuencias relativas unitaria).
+   - Suma % = 100.0% (Cierre porcentual exacto).
+3. Revise la sección de Clasificación Temática de Preguntas Abiertas:
+   - Analice cómo el sistema agrupó las opiniones de la Pregunta 3 (Necesidad), Pregunta 4 (Impacto si desaparece) y Pregunta 5 (Uso irresponsable).
+   - Promueva el debate en clase sobre las citas textuales de los encuestados.
+
+#### Paso 3: Enseñanza de Métodos de Pronósticos
+1. Ingrese al módulo «Proyecciones».
+2. Utilice el Mapa Conceptual de Métodos de Pronósticos proyectado en el aula:
+   - Explique por qué los métodos estacionarios (Promedio Móvil Simple) subestiman la demanda de IA.
+   - Demuestre cómo el Modelo Causal de Regresión Múltiple (R2 = 0.814) permite relacionar la necesidad y el costo de sustitución con la intención de uso.
+   - Analice la formulación de la Suavización Exponencial Doble (Método de Holt) con sus parámetros de nivel (alpha) y tendencia (beta).
+
+#### Paso 4: Evaluación y Rúbrica de Entrega
+1. Vaya a «Informe final».
+2. Solicite a los aprendices la exportación del informe en PDF o la descarga del libro consolidado en Excel (.xlsx) mediante el botón «Exportar Todas las Tablas a Excel».
+3. Verifique que el aprendiz incluya de forma obligatoria la Advertencia Metodológica, reconociendo los límites de una encuesta de preferencias frente a la demanda monetaria real.
+
+---
+
+## 4. GUÍA DE USO PARA EL ROL DE APRENDIZ
+
+### Perfil del Rol
+El **Aprendiz** es el investigador activo que ejecuta el estudio de mercado. Utiliza el sistema como un laboratorio analítico para comprender los resultados de su encuesta, extraer conclusiones fundamentadas y generar su entrega académica sin necesidad de calcular manualmente fórmulas complejas en hojas sueltas.
+
+### Competencias que Desarrolla:
+- Recolección y procesamiento digital de datos primarios.
+- Interpretación de tablas y gráficos estadísticos.
+- Modelación de supuestos de mercado y segmentación de clientes.
+- Redacción técnica de informes con base en evidencia empírica.
+- Conciencia ética sobre el uso responsable de la Inteligencia Artificial.
+
+### Flujo de Trabajo Paso a Paso para el Aprendiz:
+
+#### Paso 1: Exploración del Diagnóstico General
+1. Inicie en la sección «Inicio».
+2. Observe los indicadores clave:
+   - ¿Qué porcentaje de encuestados usa la IA a diario? (En la encuesta base: 37.0%).
+   - ¿Cuál es la herramienta líder? (En la encuesta base: ChatGPT con 92.6%, seguido de Gemini con 85.2%).
+   - ¿Cuál es el nivel de preocupación ética? (85.2% alerta sobre mal uso o copia escolar).
+3. Analice el Embudo de Madurez de la Demanda para entender cómo pasa un usuario de conocer una herramienta (Awareness) a depender de ella operativamente.
+
+#### Paso 2: Análisis Pregunta por Pregunta
+1. Vaya al módulo «Tabulación».
+2. Seleccione las preguntas en la barra de filtros (P1, P2, P3, etc.).
+3. Anote para su proyecto:
+   - La opción con mayor frecuencia absoluta (fi).
+   - El porcentaje de participación.
+   - Las citas textuales más representativas de las respuestas abiertas.
+4. Puede hacer clic en «CSV» en cualquier tabla para descargarla e insertarla en sus propias presentaciones.
+
+#### Paso 3: Selección y Personalización de Gráficos
+1. Ingrese a «Gráficos».
+2. Pruebe los botones interactivos de cada tarjeta:
+   - Cambie entre Barras Horizontales, Barras Verticales y Gráficos Circulares / Donas.
+   - Identifique qué tipo de gráfico comunica mejor cada variable.
+3. Lea la Lectura Estadística y Demanda al pie de cada gráfico para enriquecer su análisis escrito.
+
+#### Paso 4: Simulación de Mercado en Proyecciones
+1. Ingrese a «Proyecciones».
+2. Ajuste los controles deslizantes (Sliders):
+   - Población Objetivo (TAM): Por ejemplo, el número total de aprendices o trabajadores de su sede (ej. 3,000 personas).
+   - Segmento Accesible (SAM %): El porcentaje que cuenta con computador e Internet regular (ej. 70%).
+   - Tasa de Conversión (SOM %): El porcentaje estimado que adoptaría formalmente la herramienta (ej. 25%).
+3. Explore la tabla de los 10 Métodos de Pronóstico y haga clic en «Regresión Múltiple» y «Método de Holt» para fundamentar su justificación en la sustentación del proyecto.
+
+#### Paso 5: Generación y Entrega del Informe Final
+1. Diríjase a «Informe final».
+2. Revise la redacción de los 6 capítulos académicos.
+3. Utilice las herramientas de exportación:
+   - Imprimir / Guardar como PDF: Genera un documento limpio sin botones de pantalla, formateado para entrega formal.
+   - Copiar en Markdown: Permite pegar el informe directamente en Microsoft Word, Notion o Google Docs.
+   - Descargar Tablas en Excel: Descarga el libro estructurado con una hoja por cada pregunta tabulada.
+
+---
+
+## 5. GUÍA DE USO PARA EL ROL DE COORDINADOR ACADÉMICO
+
+### Perfil del Rol
+El **Coordinador Académico** ejerce el rol de supervisión estratégica, aseguramiento de la calidad curricular y toma de decisiones institucionales. Utiliza los resultados del sistema para planificar recursos formativos, evaluar necesidades tecnológicas reales y emitir lineamientos institucionales sobre la enseñanza y uso de la IA.
+
+### Preguntas Estratégicas que Responde el Sistema para la Coordinación:
+- ¿Existe una demanda real y justificada para dotar a la institución de licencias de IA avanzada o plataformas pedagógicas?
+- ¿Cuáles son los riesgos reales de plagio y atrofia reflexiva reportados por aprendices e instructores?
+- ¿El proyecto formativo presentado por los aprendices cuenta con rigor estadístico y sustento econométrico verificable?
+
+### Flujo de Trabajo para el Coordinador Académico:
+
+#### Paso 1: Auditoría del Panel de Control Estratégico (KPIs)
+1. Al acceder a «Inicio», el Coordinador analiza:
+   - Tasa de Adopción (96.3%): Confirma que la IA ya no es opcional ni futurista; está instalada en la rutina diaria de la comunidad.
+   - Net Demand Score (NDS - 76.8 pts): Califica el vigor de la demanda institucional como Fuerte.
+   - Fricción Ética (85.2%): Señal de alarma institucional prioritaria. Justifica la creación urgente de políticas de uso ético, talleres de pensamiento crítico y normativas de autenticidad académica.
+
+#### Paso 2: Toma de Decisiones de Dotación y Currículo
+1. En «Análisis de demanda», examine la sección Necesidades Expresadas vs. Servicios Demandados:
+   - El 51.9% demanda compresión del tiempo de investigación y estructuración de borradores.
+   - El 29.6% demanda tutoría pedagógica socrática para dudas complejas.
+2. Contraste esto con la matriz FODA para definir:
+   - Priorización de formación docente en ingeniería de prompts pedagógicos.
+   - Adquisición de herramientas con trazabilidad de citas académicas (evitando el plagio opaco).
+
+#### Paso 3: Validación del Rigor Metodológico en Proyectos de Aprendices
+1. En «Proyecciones» e «Informe final», el Coordinador verifica:
+   - Que los aprendices no hayan extrapolado linealmente una encuesta de 27 personas como si fuera la verdad absoluta del mercado nacional.
+   - Que se haya incluido la Advertencia Metodológica.
+   - Que se comprenda la diferencia entre la Regresión Causal (modelo explicativo más acertado) y la Suavización de Holt (proyección temporal con tendencia).
+
+#### Paso 4: Archivo y Trazabilidad Institucional
+1. Utilice el botón «Exportar Excel» de la barra superior para almacenar en los repositorios de la coordinación los libros de cálculo que respaldan los comités de currículo y autoevaluación institucional.
+
+---
+
+## 6. SÍNTESIS METODOLÓGICA DE MÉTODOS DE PRONÓSTICO (ANEXO TÉCNICO)
+
+| Método Evaluado | Categoría | Score | Veredicto para la Encuesta |
+| :--- | :--- | :---: | :--- |
+| Regresión Lineal Múltiple | Modelos Causales | 98% | GANADOR ABSOLUTO. Modela la demanda efectiva a partir de múltiples variables independientes observadas (R2 = 0.814). |
+| Suavización Exponencial Doble (Holt) | Series con Tendencia | 94% | MEJOR PROYECCIÓN TEMPORAL. Modela nivel (Lt) y tendencia (Tt) sin rezago para tecnologías en crecimiento acelerado. |
+| Regresión Lineal Simple | Modelos Causales | 89% | ALTO AJUSTE. Relaciona la demanda con el nivel de necesidad percibida (r = 0.74). |
+| Analogía Histórica | Cualitativos | 88% | COMPLEMENTO RECOMENDADO. Aplica la curva S logística de difusión de innovaciones (análoga a Internet y smartphones). |
+| Suavización de Brown | Series con Tendencia | 84% | VIABLE. Suavización de un parámetro; superada por Holt en flexibilidad. |
+| Consenso de Panel / Delphi | Cualitativos | 80% | CUALITATIVO. Útil para contextualizar la alarma ética y pedagógica del 85.2%. |
+| Promedio Móvil Doble | Series con Tendencia | 75% | REGULAR. Corrige parte del sesgo pero carece de ponderación exponencial. |
+| Método de Winter | Series Estacionales | 50% | DESACONSEJADO. Asume estacionalidad trimestral que no existe en estos datos. |
+| Suavización Simple | Series Estacionarias | 45% | INADECUADO. Asume serie plana y subestima la aceleración tecnológica. |
+| Promedio Móvil Simple | Series Estacionarias | 38% | EL MENOS ACERTADO. Máximo error y rezago estructural severo. |
+
+---
+
+## 7. ASISTENCIA CON INTELIGENCIA ARTIFICIAL (GEMINI API)
+
+El sistema cuenta con un botón «Análisis IA» en el encabezado y en cada tabla estadística.
+- Funcionamiento: Se conecta de forma segura en el servidor a través de @google/genai con el modelo gemini-3.8-flash.
+- Modo Offline / Heurístico: Si no se dispone de conexión a internet o de clave API externa, el sistema activa de forma transparente su motor econométrico heurístico local, garantizando interpretaciones analíticas inmediatas y de alta calidad para cualquier consulta.
+
+---
+
+*Manual oficial del proyecto "Sistema Inteligente de Análisis de la Demanda" — Generado para uso formativo e institucional.*
